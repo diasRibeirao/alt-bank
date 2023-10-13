@@ -1,0 +1,73 @@
+<mat-card>
+  <mat-card-content>
+    <div class="button-row">
+      <button mat-fab extended color="primary"  aria-label="Voltar" matTooltip="Voltar" (click)="onVoltar()">
+        <mat-icon>reply</mat-icon>Voltar
+      </button>
+
+      <button *ngIf="jogo.status != 'NOVO' && jogo.jogadores.length > 1" mat-fab extended color="accent" aria-label="Novo Jogo" matTooltip="Novo Jogo" (click)="iniciarJogo()">
+        <mat-icon>gamepad</mat-icon>Novo Jogo
+      </button>
+
+      <button *ngIf="jogo.status == 'NOVO' && jogo.jogadores.length > 1" mat-fab extended color="accent" aria-label="Novo Jogo" matTooltip="Novo Jogo" (click)="darCartas()">
+        <mat-icon>check</mat-icon>Dar Cartas
+      </button>
+    </div>
+
+    <mat-card-content *ngFor="let jogador of jogo.jogadores">
+
+      <mat-card class="jogo-card">
+        <mat-card-header>
+          <mat-card-title>{{jogador.nome}}</mat-card-title>
+        </mat-card-header>
+        <div>
+          <div class="cartas">
+            <mat-card-content>
+              <div *ngFor="let carta of jogador.mao" class="imagem-container">
+
+                <img mat-card-image [src]="'./assets/cartas/' + carta.nome + carta.naipe + '.png'" alt="{{carta.nome}} - {{carta.naipe}}">
+
+              <!--
+                {{carta.nome}}
+                {{carta.naipe}}
+              -->
+              </div>
+              <span *ngIf="jogador.status === 'VENCEU'">
+                <div class="mensagem-sucesso">
+                  venceu
+                </div>
+              </span>
+              <span *ngIf="jogador.status === 'PERDEU'">
+                <div class="mensagem-erro">
+                  perdeu
+                </div>
+              </span>
+            </mat-card-content>
+          </div>
+          <div class="pontos">
+              <div class="titulo">Pontos</div>
+              <div class="conteudo">{{jogador.pontos}}</div>
+          </div>
+        </div>
+        <mat-card-actions *ngIf="jogador.nome !== 'Mesa'">
+
+           <button mat-fab extended
+            [color]="!(jogadorDaRodada.id === jogador.id && jogo.status === 'INICIADO') ? 'primary' : 'success'"
+            [disabled]="!(jogadorDaRodada.id === jogador.id && jogo.status === 'INICIADO')"
+            aria-label="Pegar Carta"
+            matTooltip="Pegar Carta"
+            (click)="pegarCarta(jogador.id)">
+            <mat-icon>touch_app</mat-icon>Pegar Carta
+          </button>
+
+        </mat-card-actions>
+      </mat-card>
+
+
+    </mat-card-content>
+
+  </mat-card-content>
+
+
+
+</mat-card>
