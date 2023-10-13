@@ -4,7 +4,7 @@
 		<groupId>com.altbank.blackjack</groupId>
 		<artifactId>blackjack-backend</artifactId>
 		<version>1.0.0-SNAPSHOT</version>
-		<relativePath />
+		<relativePath>../pom.xml</relativePath>
 	</parent>
 	<artifactId>blackjack-core</artifactId>
 	<packaging>jar</packaging>
