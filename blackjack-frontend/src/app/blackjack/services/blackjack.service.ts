@@ -12,8 +12,7 @@ import { Jogo } from '../model/jogo';
 })
 export class BlackjackService {
 
-  //private readonly API = 'http://localhost:8080/api/v1/blackjack';
-  private readonly API = 'http://192.168.15.23:8080/api/v1';
+  private readonly API = 'http://localhost:8080/api/v1';
 
   constructor(
     private httpClient: HttpClient,
