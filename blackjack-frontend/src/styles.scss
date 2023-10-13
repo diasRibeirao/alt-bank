@@ -1,0 +1,41 @@
+/* You can add global styles to this file, and also import other style files */
+@import '@angular/material/theming';
+@import "../node_modules/ngx-toastr/toastr.css";
+@import 'bootstrap/scss/bootstrap';
+
+@include mat-core();
+
+$custom-app-primary: mat-palette($mat-blue);
+$custom-app-secondary: mat-palette($mat-indigo, A200, A400, 700);
+$custom-app-warm: mat-palette($mat-red);
+
+$custom-theme: mat-light-theme($custom-app-primary, $custom-app-secondary, $custom-app-warm);
+
+@include angular-material-theme($custom-theme);
+
+/* Adicione essas regras no seu arquivo de estilos globais ou no estilo do componente */
+
+.button-row {
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.button-row button {
+  min-width: 130px;
+}
+
+.button-row button:first-child {
+  margin: 10px;
+}
+
+.button-row button:last-child {
+  margin: 10px;
+}
+
+.empty {
+  padding: 10px;
+  font-weight: 600;
+}
+
+/* Importing Bootstrap SCSS file. */
+

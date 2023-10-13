@@ -1,0 +1,23 @@
+mat-card {
+  max-width: 80%;
+  margin: 2em auto;
+  text-align: center;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.min-width {
+  width: 100%;
+  min-width: 150px;
+}
+
+mat-card-actions button:first-child {
+  margin-right: 10px;
+}
+
+mat-card-actions button:last-child {
+  margin-left: 10px;
+}
+
