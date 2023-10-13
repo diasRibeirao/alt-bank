@@ -12,8 +12,8 @@ import org.springframework.stereotype.Service;
 import com.altbank.blackjack.domain.Jogador;
 import com.altbank.blackjack.domain.Jogo;
 import com.altbank.blackjack.enums.StatusJogo;
+import com.altbank.blackjack.repository.JogoRepository;
 import com.altbank.blackjack.service.exceptions.BlackjackException;
-import com.altbank.blackjack.service.repository.JogoRepository;
 
 import jakarta.validation.Valid;
 
@@ -43,7 +43,7 @@ public class BlackJackService {
 	}
 
 	public Jogo removerJogadorDoJogo(Integer jogoId, Integer id) {
-		return jogoRepository.removerJogadorDoJogo(jogoId, id);
+		return jogoRepository.removerJogador(jogoId, id);
 	}
 
 	public Jogo iniciarJogo(Integer jogoId) {
@@ -52,7 +52,7 @@ public class BlackJackService {
 		if (jogo.getJogadores().size() < 2) {
 			throw new BlackjackException("Necessário no mínimo 2 jogadores para iniciar o jogo");
 		}
-		
+
 		jogo.setStatus(StatusJogo.NOVO);
 
 		jogo.getBaralho().iniciarBaralho();
