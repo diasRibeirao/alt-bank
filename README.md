@@ -38,6 +38,29 @@ Por favor, verifique se o Lombok está configurado na IDE.
       -  npm install
       -  ng serve 
 #### Front
-Para jogar o BlackJack / Jogo 21 acesse: http://localhost:4200/ 
+Para jogar o BlackJack / Jogo 21 acesse: http://localhost:4200/   
+ - Clicar no Botão jogar:  
+   ![image](https://github.com/diasRibeirao/alt-bank/assets/29930488/717cebf0-dcdb-4063-b968-b8d22e366299)
+ - Adicionar um ou mais jogadores:   
+   ![image](https://github.com/diasRibeirao/alt-bank/assets/29930488/c85d87a7-e9ea-4c33-ba07-7b07d7eb65f5)
+ - Adicionar jogador:
+   ![image](https://github.com/diasRibeirao/alt-bank/assets/29930488/5420ccd2-240e-4a56-bae9-ab62b383de0b)
+ - Para jogar, clicar no botão jogar:
+   ![image](https://github.com/diasRibeirao/alt-bank/assets/29930488/89cb4051-84c3-4775-8efe-507771bc3a88)
+- Ao abrir a tela do jogo, para começar, clique no botão dar cartas:
+   ![image](https://github.com/diasRibeirao/alt-bank/assets/29930488/0f7b626d-7307-4f05-bd59-eda0e25fb855)   
+- A primeira rodada, as cartas são dadas automaticamente, a partir da segunda rodada de cartas, a MESA pega a carta automaticamente e o outro jogador precisa clicar em pegar cartas:
+   ![image](https://github.com/diasRibeirao/alt-bank/assets/29930488/bc48050e-c4c4-42bb-a38d-fc104eea1aa7)
+ - E as rodas seguem, Mesa pegando carta automaticamente e o outro jogador clicando em pegar cartas até ter um vencedor :
+   ![image](https://github.com/diasRibeirao/alt-bank/assets/29930488/d1aeaae5-9a09-4954-b9ff-22cffe958d13)
+ - A rodada termina quando:
+      - Jogador faz exatamente 21 pontos;
+      - Jogadores ultrapassem 21 pontos, ;
+  ![image](https://github.com/diasRibeirao/alt-bank/assets/29930488/0c9911e6-f2c1-4790-9766-b6562226d380)
+
+#### Ao terminar a rodada, pode iniciar um novo jogo, retornar ao menu principal para adicionar ou remover jogadores, sair.
+
+
+
 
 
