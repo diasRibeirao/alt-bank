@@ -16,11 +16,7 @@ blackjack-frontend
 -  Clone o repositório ou faça download;
 ### Backend
  - Necessária a JDK 17 instalada na máquina;
-<<<<<<< HEAD
  - Utilizando uma IDE, como por exemplo Eclipse, SpringToolSuite4, importe o projeto blackjack-backend como Maven;
-=======
- - Utilizando uma IDE, como por exemplo Eclipse, STS, importe o projeto blackjack-backend como Maven;
->>>>>>> 5225b7222d796c8528737230028c44375527cf04
  - Para iniciar a aplicação clique no modulo 'blackjack-rest' com o botão direito do mouse, vá até a opção *Run As* e selecione Spring Boot App.
 #### EndPoints
 Para ver a lista de chamadas REST disponíveis, seus parametros, códigos de resposta HTTP, e tipo de retorno, inicie a aplicação e acesse: 
